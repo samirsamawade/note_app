@@ -14,7 +14,30 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: Text('Note App'),
+        title: Text(
+          'Note App',
+          style: TextStyle(
+            color: Colors.black54,
+            fontSize: 26,
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.filter_alt_outlined,
+              color: Colors.black54,
+            ),
+          )
+        ],
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        systemOverlayStyle: SystemUiOverlayStyle(
+          statusBarBrightness: Brightness.dark,
+          statusBarColor: Colors.transparent,
+          statusBarIconBrightness: Brightness.dark,
+        ),
       ),
       body: Center(
         child: Column(

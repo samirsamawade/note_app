@@ -13,6 +13,7 @@ class NoteApp extends StatelessWidget {
       title: 'Note App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Color(0xFFe9e9f3),
       ),
       home: const HomeScreen(),
     );
