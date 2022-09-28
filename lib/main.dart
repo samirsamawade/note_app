@@ -1,7 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:note_app/screens/screens.dart';
 
-void main() => runApp(const NoteApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(const NoteApp());
+}
 
 class NoteApp extends StatelessWidget {
   const NoteApp({Key? key}) : super(key: key);

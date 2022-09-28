@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "780182394275",
+    "project_id": "note-app-e674c",
+    "storage_bucket": "note-app-e674c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780182394275:android:aee2eeadffa3bb5b2e7616",
+        "android_client_info": {
+          "package_name": "com.samawade.note_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780182394275-d1mp0k47s3kv5i57pvt1apbgm3b2ccpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApu0VgBhJVnpYA5X6_KVp-9qGhe9YOe1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "780182394275-d1mp0k47s3kv5i57pvt1apbgm3b2ccpo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
