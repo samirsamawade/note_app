@@ -47,5 +47,7 @@ app.*.map.json
 /android/app/release
 
 
-macos/Flutter/GeneratedPluginRegistrant.swift
+generated_plugin_registrant.cc
+generated_plugin_registrant.h
+generated_plugins.cmake
 GeneratedPluginRegistrant.swift

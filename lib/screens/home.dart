@@ -1,6 +1,6 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:note_app/widgets/widgets.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,8 +11,18 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  FirebaseFirestore firestore = FirebaseFirestore.instance;
+  void getNotes() async {
+    final notesReff = firestore.collection('notes');
+    final data = await notesReff.get();
+
+    print('Notes ...');
+    print(data.size);
+  }
+
   @override
   Widget build(BuildContext context) {
+    getNotes();
     return Scaffold(
       extendBodyBehindAppBar: false,
       appBar: AppBar(
